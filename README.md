@@ -1,2 +1,2 @@
 # Bases-de-Datos
-xd
+Cursos de Bases de Datos Relacionales 
