@@ -1,0 +1,459 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Safari/605.1.15" version="28.1.0">
+  <diagram name="Compañía Aérea ER" id="airline-er-model">
+    <mxGraphModel dx="2829" dy="1858" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="empleado" value="EMPLEADO" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="200" y="-80" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="emp_codigo" value="codigo_empleado" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
+          <mxGeometry x="-40" y="-120" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="emp_nombre" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="100" y="-170" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="emp_sueldo" value="sueldo_fijo" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="195" y="-180" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="emp_tarifa" value="tarifa_hora_vuelo" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="300" y="-170" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="piloto" value="PILOTO" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="110" y="60" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="piloto_horas" value="horas_vuelo" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="5" y="65" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="piloto_licencia" value="numero_licencia" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="20" y="110" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tripulacion" value="MIEMBRO_TRIPULACION" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="250" y="60" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="base_aerea" value="BASE_AEREA" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="-120" y="280" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="base_id" value="id_base" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
+          <mxGeometry x="-180" y="375" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="base_nombre" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="-150" y="430" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="base_ubicacion" value="ubicacion" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="-110" y="520" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vuelo" value="VUELO" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="630" y="195" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vuelo_numero" value="numero_vuelo" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
+          <mxGeometry x="470" y="110" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vuelo_origen" value="origen" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="575" y="115" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vuelo_destino" value="destino" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="790" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vuelo_fecha" value="fecha" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="515" y="165" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vuelo_hora_salida" value="hora_salida" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="740" y="60" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vuelo_hora_llegada" value="hora_llegada" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="790" y="165" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="avion" value="AVION" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="980" y="265" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="avion_codigo" value="codigo_avion" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
+          <mxGeometry x="940" y="125" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="avion_registro" value="numero_registro" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="115" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="avion_estado" value="estado" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tipo_avion" value="TIPO_AVION" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="360" y="345" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tipo_id" value="id_tipo" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
+          <mxGeometry x="300" y="285" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tipo_modelo" value="numero_modelo" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="295" y="245" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tipo_capacidad" value="capacidad" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="375" y="275" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tipo_peso" value="peso" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="260" y="360" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tipo_fabricante" value="fabricante" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="430" y="295" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bodega" value="BODEGA" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="150" y="525" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bodega_numero" value="numero_bodega" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
+          <mxGeometry x="130" y="450" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bodega_capacidad" value="capacidad" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="260" y="430" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bodega_ubicacion" value="ubicacion" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="310" y="530" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aeroplano" value="AEROPLANO_PARTICULAR" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="540" y="590" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aero_codigo" value="codigo_aeroplano" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
+          <mxGeometry x="440" y="540" width="110" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aero_registro" target="aero_compra">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aero_registro" value="numero_registro" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="555" y="525" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aero_compra" value="fecha_compra" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="670" y="540" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="propietario" value="PROPIETARIO" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="280" y="750" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="prop_id" value="id_propietario" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
+          <mxGeometry x="150" y="730" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="prop_nombre" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="220" y="670" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="prop_tipo" value="tipo_propietario" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="290" y="640" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="personal" value="PERSONAL_MANTENIMIENTO" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="820" y="730" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pers_id" value="id_personal" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="665" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pers_nombre" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="730" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pers_esp" value="especialidad" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="900" y="660" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="servicio" value="SERVICIO" style="whiteSpace=wrap;html=1;align=center;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="595" y="750" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="serv_fecha" value="fecha_servicio" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="460" y="750" width="90" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="serv_horas" value="horas_incurridas" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="500" y="810" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="serv_tipo" value="tipo_trabajo" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="640" y="810" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="asignado_a" value="ASIGNADO_A" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="-130" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="opera" value="OPERA" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="400" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="utiliza" value="UTILIZA" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="820" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="es_de_tipo" value="ES_DE_TIPO" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="565" y="295" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="almacenado" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;ALMACENADO_EN&lt;/font&gt;" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="580" y="415" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tiene_bodega" value="TIENE_BODEGA" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="-15" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="forma_trip" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;FORMA_TRIPULACION&lt;/font&gt;" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="600" y="30" width="125" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pertenece" value="PERTENECE_A" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="430" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="autorizado" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;AUTORIZADO_PARA&lt;/font&gt;" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="120" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="realiza" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;REALIZA_SERVICIO&lt;/font&gt;" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="750" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="line1" parent="1" source="empleado" target="spec_triangle" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line2" parent="1" source="spec_triangle" target="piloto" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line3" parent="1" source="spec_triangle" target="tripulacion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line4" parent="1" source="empleado" target="asignado_a" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint y="20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="line5" parent="1" source="asignado_a" target="base_aerea" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line6" style="entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="piloto" target="opera" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line7" parent="1" source="opera" target="vuelo" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line8" parent="1" source="tripulacion" target="forma_trip" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="line9" parent="1" source="forma_trip" target="vuelo" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line10" parent="1" source="vuelo" target="utiliza" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line11" parent="1" source="utiliza" target="avion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line12" parent="1" source="avion" target="es_de_tipo" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line13" parent="1" source="es_de_tipo" target="tipo_avion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line14" style="" parent="1" source="avion" target="almacenado" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line15" parent="1" source="almacenado" target="bodega" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="line16" parent="1" source="base_aerea" target="tiene_bodega" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line17" parent="1" source="tiene_bodega" target="bodega" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line18" parent="1" source="propietario" target="pertenece" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line19" parent="1" source="pertenece" target="aeroplano" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line20" parent="1" source="piloto" target="autorizado" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line21" parent="1" source="autorizado" target="tipo_avion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line22" parent="1" source="personal" target="realiza" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="line23" parent="1" source="realiza" target="aeroplano" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="line24" parent="1" source="realiza" target="servicio" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="attr1" parent="1" source="empleado" target="emp_codigo" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr2" parent="1" source="empleado" target="emp_nombre" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr3" parent="1" source="empleado" target="emp_sueldo" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr4" parent="1" source="empleado" target="emp_tarifa" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr5" parent="1" source="piloto" target="piloto_horas" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr6" parent="1" source="piloto" target="piloto_licencia" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr8" parent="1" source="base_aerea" target="base_id" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr9" parent="1" source="base_aerea" target="base_nombre" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr10" parent="1" source="base_aerea" target="base_ubicacion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr11" parent="1" source="vuelo" target="vuelo_numero" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr12" parent="1" source="vuelo" target="vuelo_origen" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr13" parent="1" source="vuelo" target="vuelo_destino" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr14" parent="1" source="vuelo" target="vuelo_fecha" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr15" parent="1" source="vuelo" target="vuelo_hora_salida" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr16" parent="1" source="vuelo" target="vuelo_hora_llegada" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr17" parent="1" source="avion" target="avion_codigo" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr18" parent="1" source="avion" target="avion_registro" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr19" parent="1" source="avion" target="avion_estado" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr20" parent="1" source="tipo_avion" target="tipo_id" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr21" parent="1" source="tipo_avion" target="tipo_modelo" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr22" parent="1" source="tipo_avion" target="tipo_capacidad" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr23" parent="1" source="tipo_avion" target="tipo_peso" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr24" parent="1" source="tipo_avion" target="tipo_fabricante" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr25" parent="1" source="bodega" target="bodega_numero" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr26" parent="1" source="bodega" target="bodega_capacidad" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr27" parent="1" source="bodega" target="bodega_ubicacion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr28" parent="1" source="aeroplano" target="aero_codigo" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr29" parent="1" source="aeroplano" target="aero_registro" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr30" parent="1" source="aeroplano" target="aero_compra" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr31" parent="1" source="propietario" target="prop_id" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr32" parent="1" source="propietario" target="prop_nombre" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr33" parent="1" source="propietario" target="prop_tipo" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr34" parent="1" source="personal" target="pers_id" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr35" parent="1" source="personal" target="pers_nombre" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr36" parent="1" source="personal" target="pers_esp" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr37" parent="1" source="servicio" target="serv_fecha" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr38" parent="1" source="servicio" target="serv_horas" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="attr39" parent="1" source="servicio" target="serv_tipo" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="spec_triangle" value="" style="triangle;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;rotation=90;" parent="1" vertex="1">
+          <mxGeometry x="230" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-5" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="195" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-6" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-85" y="108" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-7" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="365" y="205" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-8" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="505" y="218" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-9" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="575" y="38" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-10" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="665" y="78" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-11" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="900" y="239" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-13" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="795" y="220" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-14" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="555" y="330" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-15" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="680" y="315" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-16" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="575" y="458" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-17" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="690" y="415" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-18" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="435" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-19" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="60" y="495" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-20" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="445" y="698" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-21" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="528" y="649" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-22" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="175" y="228" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-23" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="235" y="286" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-24" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="835" y="658" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-25" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="751" y="614" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FRfiaBjHfpKK9BebFZCV-26" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="768" y="669" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
