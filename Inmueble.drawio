@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Safari/605.1.15" version="28.1.2">
   <diagram name="Página-1" id="LSABtN7aqw4RBNQ7D9AH">
-    <mxGraphModel dx="3271" dy="1587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="6431" dy="3259" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -787,6 +787,9 @@
         </mxCell>
         <mxCell id="DQf74Dk8F8_CzUo_mt_E-536" value="(1,1)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-755" y="998" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DQf74Dk8F8_CzUo_mt_E-540" value="-Para cada entidad se asignó un ID aun sin estar especificado en el caso de estudio para un mayor control de las entidades.&lt;div&gt;-En la relación ternaria Inmueble-contrato-inquilino, solo se dejó el nombre de la entidad &quot;Inquilino&quot; para evitar redundancia de los datos puesto que la entidad ya estaba presente en otra relación.&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-380" y="1115" width="231" height="230" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
