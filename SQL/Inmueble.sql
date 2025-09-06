@@ -62,6 +62,7 @@ CREATE TABLE inmuebles (
 );
 
 -- Tabla base: Propietarios
+-- direccion y telefono son atributos comunes de particular y empresa
 CREATE TABLE propietarios (
     id_propietario SERIAL PRIMARY KEY,
     direccion VARCHAR(120) NOT NULL,
@@ -89,7 +90,10 @@ CREATE TABLE inquilinos (
     direccion VARCHAR(120) NOT NULL,
     telefono VARCHAR(20),
     tipo_inmueble_preferido VARCHAR(50) NOT NULL,
-    importe_maximo_mensual NUMERIC(10,2) NOT NULL
+    importe_maximo_mensual NUMERIC(10,2) NOT NULL,
+    fecha DATE NOT NULL,
+    comentarios TEXT,
+    empleado_asignado INT REFERENCES empleados(id_empleado) NOT NULL,
 );
 
 -- Tabla: Visitas
@@ -126,6 +130,7 @@ CREATE TABLE contratos (
     fecha_inicio DATE NOT NULL,
     fecha_finalizacion DATE NOT NULL,
     duracion_meses INT NOT NULL CHECK (duracion_meses BETWEEN 3 AND 12),
+    miembro_plantilla INT REFERENCES empleados(id_empleado) NOT NULL
 );
 
 -- Tabla: Inspecciones
