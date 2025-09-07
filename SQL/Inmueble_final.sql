@@ -1,4 +1,4 @@
--- 1) Oficinas
+--Oficinas
 CREATE TABLE oficinas (
     id_oficina SERIAL PRIMARY KEY,
     calle VARCHAR(50) NOT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE oficinas (
     fax VARCHAR(20)
 );
 
--- 2) Empleados (relacionado con oficina)
+--Empleados (relacion con oficina, oficina-empleado 1:N)
 CREATE TABLE empleados (
     id_empleado SERIAL PRIMARY KEY,
     fk_id_oficina INT NOT NULL,
@@ -24,14 +24,14 @@ CREATE TABLE empleados (
         REFERENCES oficinas(id_oficina)
 );
 
--- 3) Propietarios (padre)
+--Propietarios (supertipo)
 CREATE TABLE propietarios (
     id_propietario SERIAL PRIMARY KEY,
     direccion VARCHAR(120) NOT NULL,
     telefono VARCHAR(20) NOT NULL
 );
 
--- 4) Particulares (subtipo)
+-- Particulares (subtipo de propietarios 1:1)
 CREATE TABLE particulares (
     fk_id_propietario INT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE particulares (
         REFERENCES propietarios(id_propietario)
 );
 
--- 5) Empresas (subtipo)
+--Empresas (subtipo de propietarios 1:1)
 CREATE TABLE empresas (
     fk_id_propietario INT PRIMARY KEY,
     nombre_comercial VARCHAR(50) NOT NULL,
@@ -49,7 +49,8 @@ CREATE TABLE empresas (
         REFERENCES propietarios(id_propietario)
 );
 
--- 6) Inmuebles (relacionado con propietario y empleado responsable)
+--Inmuebles (relacion con propietario, propietario-inmuebles 1:N)
+--          (relacion con empleado responsable, empleado-inmuebles 1:N)
 CREATE TABLE inmuebles (
     id_inmueble SERIAL PRIMARY KEY,
     calle VARCHAR(50) NOT NULL,
@@ -66,7 +67,7 @@ CREATE TABLE inmuebles (
         REFERENCES empleados(id_empleado)
 );
 
--- 7) Inquilinos
+--Inquilinos (relacion con empleado responsable, empleado-inquilinos 1:N)
 CREATE TABLE inquilinos (
     id_inquilino SERIAL PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
@@ -81,7 +82,7 @@ CREATE TABLE inquilinos (
         REFERENCES empleados(id_empleado)
 );
 
--- 8) Periódicos
+--Periodicos
 CREATE TABLE periodicos (
     id_periodico SERIAL PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
@@ -91,7 +92,7 @@ CREATE TABLE periodicos (
     contacto VARCHAR(50) NOT NULL
 );
 
--- 9) Anuncios (une inmuebles y periódicos)
+--Anuncios (relaciona inmuebles y periodicos)
 CREATE TABLE anuncios (
     id_anuncio SERIAL PRIMARY KEY,
     fk_id_inmueble INT NOT NULL,
@@ -104,7 +105,7 @@ CREATE TABLE anuncios (
         REFERENCES periodicos(id_periodico)
 );
 
--- 10) Visitas (une inquilinos e inmuebles)
+--Visitas (relaciona inquilinos y inmuebles)
 CREATE TABLE visitas (
     id_visita SERIAL PRIMARY KEY,
     fk_id_inmueble INT NOT NULL,
@@ -117,7 +118,7 @@ CREATE TABLE visitas (
         REFERENCES inquilinos(id_inquilino)
 );
 
--- 11) Inspecciones (relaciona empleado e inmueble)
+--Inspecciones (relaciona empleados y inmuebles)
 CREATE TABLE inspecciones (
     id_inspeccion SERIAL PRIMARY KEY,
     fk_id_empleado INT NOT NULL,
@@ -130,7 +131,7 @@ CREATE TABLE inspecciones (
         REFERENCES inmuebles(id_inmueble)
 );
 
--- 12) Contratos (une inquilino, inmueble y miembro de la plantilla que lo formalizó)
+--Contratos (une inquilino, inmueble y miembro de la plantilla que lo gestiona)
 CREATE TABLE contratos (
     id_contrato SERIAL PRIMARY KEY,
     fk_id_inmueble INT NOT NULL,
@@ -151,7 +152,7 @@ CREATE TABLE contratos (
         REFERENCES empleados(id_empleado)
 );
 
--- 13) Parientes (1:1 con empleado)
+--Parientes (1:1 con empleado)
 CREATE TABLE parientes (
     id_pariente SERIAL PRIMARY KEY,
     fk_id_empleado INT UNIQUE NOT NULL,
@@ -163,7 +164,7 @@ CREATE TABLE parientes (
         REFERENCES empleados(id_empleado)
 );
 
--- 14) Especializaciones de empleados (tablas hijas)
+--Especializaciones de empleados (subtipos de empleados 1:1)
 CREATE TABLE directores (
     fk_id_empleado INT PRIMARY KEY,
     fk_id_oficina INT UNIQUE NOT NULL,
