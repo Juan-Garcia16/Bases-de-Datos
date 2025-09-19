@@ -1,3 +1,11 @@
+-- crear la base de datos
+CREATE DATABASE IF NOT EXISTS inmobiliaria
+    DEFAULT CHARACTER SET utf8mb4
+    DEFAULT COLLATE utf8mb4_general_ci;
+
+-- usar la base de datos
+USE inmobiliaria;
+
 -- Oficinas
 CREATE TABLE oficinas (
     id_oficina INT AUTO_INCREMENT PRIMARY KEY,
